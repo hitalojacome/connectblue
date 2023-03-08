@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Vida Marinha</title>
+
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    
+  </head>
+  <body>
+    <header id="header">
+      <a id="logo" href="#home">CONNECT <span id="cor-azul">BLUE</span></a>
+      <nav id="nav">
+        <button
+          aria-label="Abrir Menu"
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          Menu
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="#informacao">Informação</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#curisidades">Curiosidades</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div>
+          <h2>VIDA MARINHA</h2>
+          <p>
+            Ajude a preservar a vida marinha e proteger os oceanos. Sua doação é
+            fundamental para educar, preservar e proteger a diversidade da vida
+            marinha para as gerações futuras. Junte-se a nós na luta pela
+            conservação dos habitats marinhos.
+          </p>
+          <a
+            href="https://donate.oceanconservancy.org/page/92465/donate/1"
+            target="_blank"
+            >Doe Agora!</a
+          >
+        </div>
+      </section>
+      <section id="informacao">
+        <article>
+          <h2>IMPORTÂNCIA DOS OCEANOS PARA A VIDA NO PLANETA</h2>
+          <p>
+            Os oceanos são um dos principais responsáveis pela manutenção da
+            vida no planeta. Eles ocupam cerca de 70% da superfície terrestre e
+            contêm uma grande diversidade de espécies animais e vegetais. Além
+            disso, são responsáveis por regular o clima, a temperatura do
+            planeta e os ciclos biogeoquímicos, que garantem a sobrevivência de
+            todas as formas de vida.
+          </p>
+
+          <p>
+            Mas os oceanos estão sob ameaça. A ação humana tem causado impactos
+            significativos nesses ecossistemas, como a poluição, o despejo de
+            resíduos tóxicos, a pesca predatória, a destruição de habitats
+            naturais e o aquecimento global.
+          </p>
+
+          <p>
+            A poluição é uma das principais ameaças aos oceanos. Toneladas de
+            lixo são despejadas diariamente nas águas, afetando a qualidade da
+            água e prejudicando a vida marinha. Além disso, muitos resíduos são
+            tóxicos e podem levar à contaminação de animais e plantas, afetando
+            toda a cadeia alimentar.
+          </p>
+        </article>
+      </section>
+      <section id="galeria">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../imgs/artico1.jpg"></div>
+            <div class="swiper-slide"><img src="../imgs/Mascara.jpg"></div>
+            <div class="swiper-slide"><img src="../imgs/tamar2.jpg"></div>
+            <div class="swiper-slide"><img src="../imgs/pesca1.jpg"></div>
+            <div class="swiper-slide"><img src="../imgs/pinguinzin.jpg"></div>
+            <div class="swiper-slide"><img src="../imgs/florida2.jpg"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section id="curisidades">curisidades</section>
+      <section id="sobre">
+        <h1 id="sobre__titulo">
+            SOBRE NÓS
+        </h1>
+        <article id="sobre__texto1">
+            <h2 id="sobre__texto1__titulo">
+                Missão
+            </h2>
+            <p id="sobre__texto1__paragrafo">
+              A <strong>Ocean Conservancy</strong> está trabalhando com <strong>você</strong> para<br />proteger o oceano dos maiores desafios globais de hoje.<br /> <strong>Juntos</strong>, criamos soluções baseadas em evidências para<br />um oceano saudável, a vida selvagem e as comunidades<br />que dependem dele.
+            </p>
+        </article>
+        <article id="sobre__texto2">
+            <h2 id="sobre__texto2__titulo">
+                Visão
+            </h2>
+            <p id="sobre__texto2__paragrafo">
+              <strong>Vislumbramos</strong> <i>um oceano mais<br />saudável</i>, <strong>protegido por<br /> um mundo mais justo.</strong>
+            </p>
+        </article>
+      </section>
+      <section id="contato">contato</section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Connect Blue</h4>
+            <ul>
+              <li><a href="#informacao">Informação</a></li>
+              <li><a href="#galeria">Galeria</a></li>
+              <li><a href="#curisidades">Curiosidades</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Obter ajuda</h4>
+            <ul>
+              <li><a href="#">Perguntas Frequentes</a></li>
+              <li><a href="#">Entre em Contato</a></li>
+              <li><a href="#">Suporte Técnico</a></li>
+              <li><a href="#">Doações</a></li>
+              <li><a href="#">Denúncia de Maus-Tratos</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Notícias</h4>
+            <ul>
+              <li><a href="#">Destaques</a></li>
+              <li><a href="#">Notícias Gerais</a></li>
+              <li><a href="#">Entrevistas</a></li>
+              <li><a href="#">Artigos</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Redes Sociais</h4>
+            <div class="social-links">
+              <a href="https://pt-br.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://github.com/"><i class="fab fa-github"></i></a>
+              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a class="back-to-top" href="#">➤</a>
+    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
