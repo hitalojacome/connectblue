@@ -149,7 +149,7 @@ main section#informacao {
 }
 
 main section#informacao article {
-  margin: 40px 0;
+  padding: 20px 0;
 }
 
 main section#informacao h2 {
@@ -162,6 +162,7 @@ main section#informacao h2 {
 main section#informacao p {
   margin: 30px 0;
   line-height: 30px;
+  font-size: 25px;
 }
 
 main section#galeria {
@@ -397,18 +398,20 @@ div.bgcarousel div.slide div.desc a{
   }
 
   #sobre{
+    background-image: url('imgs/orca-mobile.png');
     display: flex;
     flex-direction: column;
   }
 
   #sobre__titulo {
+    width: 60%;
     top: 10px;
     left: 22%;
   }
 
   #sobre__texto1 {
     display: flex;
-    width: 500px;
+    width: 490px;
     top: 20px;
     left: 0;
   }
