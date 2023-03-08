@@ -254,7 +254,7 @@ strong {
 }
   
 div.bgcarousel{ 
-  background: black url(ajaxload.gif) center center no-repeat; 
+  background: black url(../connect-blue/jquery/ajaxload.gif) center center no-repeat; 
 }
   
 div.bgcarousel img.navbutton{ 
