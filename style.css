@@ -248,28 +248,57 @@ strong {
 
 /* --- Causas inicio --- */
 
-.swiper {
-  width: 100%;
-  height: 790px;
+#mybgcarousel{ 
+  width:100%;
+  height:800px;
 }
-
-.swiper-slide {
+  
+div.bgcarousel{ 
+  background: black url(ajaxload.gif) center center no-repeat; 
+}
+  
+div.bgcarousel img.navbutton{ 
+}
+  
+div.bgcarousel div.slide{ 
+  background-color: black;
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  color: black;
+}
+  
+div.bgcarousel div.selectedslide{ 
+}
+  
+div.bgcarousel div.slide div.desc{ 
+  position: absolute;
+  color: #dc6a00;
+  left: 100px;
+  top: 140px;
+  width:500px;
+  padding: 10px;
   text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font: bold 30px sans-serif, Arial;
+  text-shadow: 0 -2px 2px #000 ; 
+  z-index:5;
 }
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  
+div.bgcarousel div.selectedslide div.desc{ /* CSS for currently selected slide's desc div */
+}
+  
+div.bgcarousel div.slide div.desc h2{
+  font-size:100%;
+  margin:0;
+}
+  
+div.bgcarousel div.slide div.desc a{
+  color:yellow;
+  text-decoration:none;
 }
 
 /* --- Causas fim --- */
+
 
 .footer {
   background-color: #24262b;
@@ -367,8 +396,32 @@ strong {
     margin-top: 50px;
   }
 
-  .swiper {
-    height: 100%;
+  #sobre{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #sobre__titulo {
+    top: 10px;
+    left: 22%;
+  }
+
+  #sobre__texto1 {
+    display: flex;
+    width: 500px;
+    top: 20px;
+    left: 0;
+  }
+
+  #sobre__texto2 {
+    width: 500px;
+    top: 50px;
+    left: -8px;
+  }
+
+  div.bgcarousel div.slide div.desc {
+    left: 14%;
+    width: 350px;
   }
 
   .footer-col {
