@@ -571,20 +571,20 @@ section#contato form button:hover {
   #sobre__titulo {
     width: 60%;
     top: 10px;
-    left: 22%;
+    left: 28%;
   }
 
   #sobre__texto1 {
     display: flex;
     width: 490px;
     top: 20px;
-    left: 0;
+    margin-left: 30%;
   }
 
   #sobre__texto2 {
     width: 500px;
     top: 50px;
-    left: -8px;
+    margin-left: -40%;
   }
 
   #Curiosidade h1{
