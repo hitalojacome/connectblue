@@ -181,6 +181,85 @@ ul {
   list-style: none;
 }
 
+  /* PAGINA CURIOSIDADE */
+
+  #Curiosidade{
+    background-image: url(imgs/fundo-do-mar_1.png);
+    background-size: cover;
+    color: #fff;
+  }
+
+  #Curiosidade h1{
+    position: relative;
+    width: 19%;
+    font-size: 50px;
+    top: 80px;
+    left: 6%;
+    color: #fff;
+  }
+
+  .p1{
+    margin: 5% 0 0 0 ;
+    margin-left: 6%;
+    width: 80%;
+  }
+
+  #Curiosidade div{
+    position: relative;
+    display:inline-flex;
+    justify-content:space-around;
+    flex-direction: column;
+    height: 400px;
+    width: 25%;
+    left: 11%;
+    top: 100px;
+    box-sizing: border-box;
+  }
+
+  #Curiosidade button{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ff5721;
+    width: 40%;
+    padding: 10px;
+    border: none;
+    border-radius: 10%;
+    margin: 20px 20px;
+  }
+
+/* ANIMAIS EM EXTINÇÃO */
+
+  #extintos{
+    background-color: #f4f2f2;
+    width: 80%;
+    height: 400px;
+    margin: auto;
+  }
+
+  #extintos h3{
+    padding-top: 70px;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  table{
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    margin-left: 20%;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+  }
+  
+  tr:hover {background-color: #D6EEEE;}
+
+
+
 /* --- Sobre nós inicio --- */
 
 #sobre {
@@ -285,7 +364,7 @@ div.bgcarousel div.slide div.desc{
   z-index:5;
 }
   
-div.bgcarousel div.selectedslide div.desc{ /* CSS for currently selected slide's desc div */
+div.bgcarousel div.selectedslide div.desc{ 
 }
   
 div.bgcarousel div.slide div.desc h2{
@@ -300,6 +379,88 @@ div.bgcarousel div.slide div.desc a{
 
 /* --- Causas fim --- */
 
+/* --- Contato inicio --- */
+
+section#contato {
+  background-image: url(imgs/back-contato.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section#contato h2 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-right: 900px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+section#contato p {
+  margin: 30px 0;
+  line-height: 30px;
+}
+
+label {
+  color: #fff;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section#contato form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  float: left;
+}
+
+section#contato form input {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  box-sizing: border-box;
+  float: left;
+}
+
+section#contato form textarea {
+  width: 100%;
+  padding: 60px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  box-sizing: border-box;
+  clear: left;
+}
+
+section#contato form button {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  box-sizing: border-box;
+  background-color: #ff5721;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+section#contato form button:hover {
+  background-color: #004485;
+}
+
+/* --- Contato fim --- */
+
+/* --- footer inicio --- */
 
 .footer {
   background-color: #24262b;
@@ -362,6 +523,8 @@ div.bgcarousel div.slide div.desc a{
   background-color: #ffffff;
 }
 
+/* --- footer fim --- */
+
 .back-to-top {
   position: fixed;
   bottom: 2rem;
@@ -377,6 +540,8 @@ div.bgcarousel div.slide div.desc a{
   transform: rotate(-90deg);
   border: 0.01rem solid #0a1128;
 }
+
+/* responsividade  */
 
 @media screen and (max-width: 1200px) {
   main section#home {
@@ -420,6 +585,41 @@ div.bgcarousel div.slide div.desc a{
     width: 500px;
     top: 50px;
     left: -8px;
+  }
+
+  #Curiosidade h1{
+    top: 40px;
+    left: 18%;
+  }
+
+  .p1{
+    margin: 10% 0 0 0 ;
+    margin-left: 8%;
+    text-align: center;
+  }
+
+  #Curiosidade div{
+    position: relative;
+    display: block;
+    height: 380px;
+    width: 70%;
+    left: 15%;
+    top: 25px;
+    box-sizing: border-box;
+  }
+
+  #extintos{
+    width: 100%;
+  }
+
+  #extintos h3{
+    padding-top: 30px;
+  }
+
+  table{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
   }
 
   div.bgcarousel div.slide div.desc {
