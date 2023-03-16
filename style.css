@@ -14,7 +14,7 @@ body {
   color: #0a1128;
 }
 
-a {
+#menu a {
   text-decoration: none;
   color: #0a1128;
 }
@@ -46,6 +46,8 @@ header {
 }
 
 header #logo {
+  text-decoration: none;
+  color: #000;
   font-size: 24px;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
@@ -277,7 +279,7 @@ ul {
 
 #sobre__texto1 {
   position: relative;
-  width: 50%;
+  width: 60%;
   height: auto;
   top: 300px;
   left: -15%;
@@ -298,10 +300,10 @@ ul {
 
 #sobre__texto2 {
   position: relative;
-  width: 40%;
+  width: 50%;
   height: auto;
   left: 55%;
-  top: -155px;
+  top: -165px;
   text-align: center;
   float: left;
 }
@@ -324,53 +326,19 @@ strong {
 
 /* --- Causas inicio --- */
 
-#mybgcarousel{ 
-  width:100%;
-  height:900px;
-}
-  
-div.bgcarousel{ 
-  background: black url(../connect-blue/jquery/ajaxload.gif) center center no-repeat; 
-}
-  
-div.bgcarousel img.navbutton{ 
-}
-  
-div.bgcarousel div.slide{ 
-  background-color: black;
-  background-position: center center; 
-  background-repeat: no-repeat;
-  background-size: cover; 
-  color: black;
-}
-  
-div.bgcarousel div.selectedslide{ 
-}
-  
-div.bgcarousel div.slide div.desc{ 
-  position: absolute;
-  color: #dc6a00;
-  left: 100px;
-  top: 140px;
-  width:500px;
-  padding: 10px;
-  text-align: center;
+.carousel-item .carousel-caption {
+  top: 10%;
   font: bold 30px sans-serif, Arial;
   text-shadow: 0 -2px 2px #000 ; 
-  z-index:5;
 }
-  
-div.bgcarousel div.selectedslide div.desc{ 
+
+.carousel-item a {
+  text-decoration: none;
+  color : #dc6a00;
 }
-  
-div.bgcarousel div.slide div.desc h2{
-  font-size:100%;
-  margin:0;
-}
-  
-div.bgcarousel div.slide div.desc a{
-  color:yellow;
-  text-decoration:none;
+
+.carousel-item a:hover {
+  font: bold 55px sans-serif, Arial;
 }
 
 /* --- Causas fim --- */
@@ -408,11 +376,10 @@ label {
 
 section#contato form {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 100%;
-  float: left;
 }
 
 section#contato form input {
@@ -423,25 +390,26 @@ section#contato form input {
   margin-bottom: 20px;
   font-size: 18px;
   box-sizing: border-box;
-  float: left;
 }
 
 section#contato form textarea {
+  margin-left: 1%;
+  position: relative;
   width: 100%;
   padding: 60px;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 20px;
   font-size: 18px;
-  box-sizing: border-box;
-  clear: left;
+  box-sizing: border-box; 
 }
 
 section#contato form button {
+  position: absolute;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin-top: 27%;
   font-size: 18px;
   box-sizing: border-box;
   background-color: #ff5721;
@@ -558,31 +526,6 @@ section#contato form button:hover {
     margin-top: 50px;
   }
 
-  #sobre{
-    background-image: url('imgs/orca-mobile.png');
-    display: flex;
-    flex-direction: column;
-  }
-
-  #sobre__titulo {
-    width: 60%;
-    top: 10px;
-    left: 28%;
-  }
-
-  #sobre__texto1 {
-    display: flex;
-    width: 490px;
-    top: 20px;
-    margin-left: 30%;
-  }
-
-  #sobre__texto2 {
-    width: 500px;
-    top: 50px;
-    margin-left: -40%;
-  }
-
   #Curiosidade h1{
     top: 40px;
     left: 18%;
@@ -609,6 +552,7 @@ section#contato form button:hover {
   }
 
   #extintos h3{
+    font-size: 30px;
     padding-top: 30px;
   }
 
@@ -618,16 +562,11 @@ section#contato form button:hover {
     margin-top: 50px;
   }
 
-  div.bgcarousel div.slide div.desc {
-    left: 14%;
-    width: 350px;
-  }
-
-  .footer-col {
+   .footer-col {
     width: 50%;
     margin-bottom: 30px;
     text-align: center;
-  }
+  } 
 }
 
 @media screen and (max-width: 850px) {
@@ -716,7 +655,32 @@ section#contato form button:hover {
     margin-top: 50px;
   }
 
-  .footer-col {
-    width: 100%;
+  #sobre{
+    background-image: url('imgs/orca-mobile.png');
+    display: flex;
+    flex-direction: column;
   }
+
+  #sobre__titulo {
+    width: 60%;
+    top: 10px;
+    left: 27%;
+  }
+
+  #sobre__texto1 {
+    display: flex;
+    width: 490px;
+    top: 30px;
+    margin-left: 25%;
+  }
+
+  #sobre__texto2 {
+    width: 500px;
+    top: 50px;
+    margin-left: -45%;
+  }
+
+   .footer-col {
+    width: 100%;
+  } 
 }

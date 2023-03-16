@@ -19,32 +19,11 @@
     />
     <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon" />
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="jquery/jquery.velocity.min.js"></script> 
-    <script type="text/javascript" src="jquery/jquery.touchSwipe.min.js"></script>
-        
-    <script src="jquery/bgcarousel.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        
-      var firstbgcarousel=new bgCarousel({
-          wrapperid: 'mybgcarousel', 
-          imagearray: [
-              ['imgs/bear.jpg', '<h1>Protegendo o Ártico</h1><br />Nos últimos anos, a vida selvagem e os povos do Ártico enfrentaram impactos rápidos e dramáticos relacionados à mudança climática global. Faça parte para mudar o mundo de milhares de espécies.'], 
-              ['imgs/lixo1.jpg', '<h1>Um mar livre de lixo</h1><br />O lixo oceânico afeta a saúde da vida selvagem, das pessoas e das economias locais. O lixo na água e na costa pode ser confundido com comida pela vida selvagem ou enredar animais com consequências letais.'],
-              ['imgs/tamar3.jpg', '<h1>Projeto Tamar</h1><br />Após 40 anos de atividade no Brasil, a Fundação Projeto Tamar já colheu os primeiros frutos do seu trabalho. Com análise dos dados de mais de 15 anos, revelaram tendência de recuperação das populações de quatro das cinco espécies de tartarugas marinhas que ocorrem no Brasil'],
-              ['imgs/pesca1.jpg', '<h1>Pesca Sustentável</h1><br />Os peixes sustentam nossos ecossistemas, alimentam nossos corpos, impulsionam nossa economia e sustentam nossas culturas. '],
-              ['imgs/pinguinzin.jpg', '<h1>Confrontando as Mudanças Climáticas</h1><br />Levar o oceano em consideração é fundamental para enfrentar com sucesso as mudanças climáticas, e lidar com as mudanças climáticas é fundamental para o futuro do oceano.']
-          ],
-            displaymode: {type:'auto', pause:3000, cycles:2, stoponclick:false, pauseonmouseover:true},
-            navbuttons: ['jquery/left.gif', 'jquery/right.gif', 'jquery/up.gif', 'jquery/down.gif'], 
-            activeslideclass: 'selectedslide', 
-            orientation: 'h', 
-            persist: true, 
-            slideduration: 650 
-      })
-          
-          </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- biblioteca bootstrap html inserida no html -->
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- biblioteca bootstrap JS inserida no html -->
     
   </head>
   <body>
@@ -62,7 +41,7 @@
           <span id="hamburger"></span>
         </button>
         <ul id="menu" role="menu">
-          <li><a href="#informacao">Informação</a></li>
+          <li><a href="#informacao" >Informação</a></li>
           <li><a href="#galeria">Galeria</a></li>
           <li><a href="#Curiosidade">Curiosidades</a></li>
           <li><a href="#extintos">Dados</a></li>
@@ -116,10 +95,85 @@
             toda a cadeia alimentar.
           </p>
         </article>
+
       </section>
       <section id="galeria">
-        <div id="mybgcarousel" class="bgcarousel"></div>
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner" style="height: 701px;">
+            <div class="carousel-item active">
+              <img src="imgs/bear.jpg" class="d-block w-100" alt="Protegendo o Ártico">
+              <div class="carousel-caption d-none d-md-block">
+                <a href="https://oceanconservancy.org/protecting-the-arctic/" target="_blank">
+                  <h5 style="font-size: 50px;">Protegendo o Ártico</h5>
+                </a>
+                <p>Nos últimos anos, a vida selvagem e os povos do Ártico enfrentaram impactos rápidos e dramáticos relacionados à mudança climática global. Faça parte para mudar o mundo de milhares de espécies.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/lixo1.jpg" class="d-block w-100" alt="Um mar livre de lixo">
+              <div class="carousel-caption d-none d-md-block">
+                <a href="https://oceanconservancy.org/trash-free-seas/" target="_blank">
+                  <h5 style="font-size: 50px;">Um mar livre de lixo</h5>
+              </a>
+                <p>O lixo oceânico afeta a saúde da vida selvagem, das pessoas e das economias locais. O lixo na água e na costa pode ser confundido com comida pela vida selvagem ou enredar animais com consequências letais.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imgs/tamar3.jpg" class="d-block w-100" alt="Projeto Tamar">
+              <div class="carousel-caption d-none d-md-block">
+                <a href="https://www.tamar.org.br/" target="_blank">
+                  <h5 style="font-size: 50px;">Projeto Tamar</h5>
+                </a>
+                <p>Após 40 anos de atividade no Brasil, a Fundação Projeto Tamar já colheu os primeiros frutos do seu trabalho. Com análise dos dados de mais de 15 anos, revelaram tendência de recuperação das populações de quatro das cinco espécies de tartarugas marinhas que ocorrem no Brasil.</p>
+              </div>
+            </div>
+              <div class="carousel-item">
+                <img src="imgs/pesca1.jpg" class="d-block w-100" alt="Pesca Sustentável">
+                <div class="carousel-caption d-none d-md-block">
+                  <a href="https://oceanconservancy.org/sustainable-fisheries/" target="_blank">
+                    <h5 style="font-size: 50px;">Pesca Sustentável</h5>
+                  </a>
+                  <p>Os peixes sustentam nossos ecossistemas, alimentam nossos corpos, impulsionam nossa economia e sustentam nossas culturas. Apesar da importância do peixe e da pesca para as pessoas e economias, a pesca continua a ser um desafio para gerir de forma sustentável em todo o mundo.</p>
+              </div>
+            </div>
+              <div class="carousel-item">
+                <img src="imgs/pinguinzin.jpg" class="d-block w-100" alt="Confrontando as Mudanças Climáticas">
+                <div class="carousel-caption d-none d-md-block">
+                  <a href="https://oceanconservancy.org/climate/" target="_blank">
+                    <h5 style="font-size: 50px;">Confrontando as Mudanças Climáticas</h5>
+                  </a>
+                  <p>Levar o oceano em consideração é fundamental para enfrentar com sucesso as mudanças climáticas, e lidar com as mudanças climáticas é fundamental para o futuro do oceano.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/florida2.jpg" class="d-block w-100" alt="Protegendo a florida">
+                <div class="carousel-caption d-none d-md-block">
+                  <a href="https://oceanconservancy.org/protecting-florida/" target="_blank">
+                    <h5 style="font-size: 50px;">Protegendo a florida</h5>
+                  </a>
+                  <p>Problemas de poluição e qualidade da água parecem fluir por toda parte. Propostas de perfuração offshore ameaçam as praias da Flórida. E os impactos de ameaças sempre presentes, como lixo oceânico, superdesenvolvimento e emissões de carbono são visíveis em quase todos os cantos</p>
+                </div>
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </section>
+
       <section id="Curiosidade">
         <h1>Curiosidade</h1>
         <p class="p1">Descubra fatos interessantes sobre a vida marinha, desde os maiores animais do oceano até as criaturas mais estranhas e incomuns.</p>
@@ -207,21 +261,22 @@
         <h2>CONTATO</h2>
         <form>
           <div class="form-group">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" />
+            <label for="nome">Primeiro nome:</label>
+            <input type="text" id="none" name="nome" size="28" />
           </div>
           <div class="form-group">
-            <label for="sobrenome">Sobrenome</label>
-            <input type="text" id="sobrenome" name="sobrenome" />
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" size="28" />
           </div>
           <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" size="28" />
           </div>
           <div class="form-group">
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem"></textarea>
+            <label for="mensagem">Mensagem:</label>
+            <textarea cols="30" rows="5"></textarea>
           </div>
+          <br>
           <button type="submit" value="Enviar">Enviar</button>
         </form>
       </section>
