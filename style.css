@@ -188,6 +188,7 @@ ul {
   }
 
   #Curiosidade h1{
+    font-family: "Montserrat", sans-serif;
     position: relative;
     width: 19%;
     font-size: 50px;
@@ -200,6 +201,7 @@ ul {
     margin: 5% 0 0 0 ;
     margin-left: 6%;
     width: 80%;
+    font-size: 24px;
   }
 
   #Curiosidade div{
@@ -235,6 +237,7 @@ ul {
   }
 
   #extintos h3{
+    font-family: "Montserrat", sans-serif;
     padding-top: 70px;
     text-align: center;
     font-size: 50px;
@@ -269,6 +272,7 @@ ul {
 }
 
 #sobre__titulo {
+  font-family: "Montserrat", sans-serif;
   position: relative;
   left: 6%;
   top: 80px;
@@ -289,6 +293,7 @@ ul {
 }
 
 #sobre__texto1__titulo {
+  font-family: "Montserrat", sans-serif;
   color:#004485 ;
   font-size: 40px;
 }
@@ -309,6 +314,7 @@ ul {
 }
 
 #sobre__texto2__titulo {
+  font-family: "Montserrat", sans-serif;
   color:#004485;
   font-size: 40px;
 }
