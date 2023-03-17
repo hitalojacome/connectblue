@@ -385,13 +385,15 @@ label {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-section#contato form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  float: left;
+section#contato article {
+  max-width: 80%;
+  margin: auto;
+  padding: 10rem var(3rem);
+  padding: 50px;
+}
+
+section#contato h2 {
+  margin-bottom: 20px;
 }
 
 section#contato form input {
@@ -407,13 +409,14 @@ section#contato form input {
 
 section#contato form textarea {
   width: 100%;
-  padding: 60px;
+  height: 300px;
+  padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-bottom: 20px;
   font-size: 18px;
   box-sizing: border-box;
   clear: left;
+  resize: none;
 }
 
 section#contato form button {
@@ -427,10 +430,14 @@ section#contato form button {
   color: #fff;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s ease;
+  width: 150px;
 }
 
 section#contato form button:hover {
-  background-color: #004485;
+  background-color: #fff;
+  color: #ff5721;
+  border: 1px solid #ff5721;
 }
 
 /* --- Contato fim --- */
@@ -569,6 +576,11 @@ section#contato form button:hover {
   table {
     width: 80%;
     margin: auto;
+    margin-top: 50px;
+  }
+
+  section#contato h2 {
+    font-size: 40px;
     margin-top: 50px;
   }
 
