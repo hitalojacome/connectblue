@@ -61,6 +61,7 @@ header #logo {
 header ul {
   display: flex;
   list-style: none;
+  margin-bottom: 0;
 }
 
 header ul li a {
@@ -92,6 +93,7 @@ header a span#cor-azul {
 #btn-mobile {
   display: none;
 }
+
 
 main section#home {
   background-image: url("imgs/bg-main.png");
