@@ -16,6 +16,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 #menu a {
@@ -191,44 +192,61 @@ ul {
   color: #fff;
 }
 
-#Curiosidade h1 {
+#Curiosidade article {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 80px;
+}
+
+#Curiosidade article h2 {
+  font-size: 48px;
+  font-weight: 600;
   font-family: "Montserrat", sans-serif;
-  position: relative;
-  width: 19%;
-  font-size: 50px;
-  top: 80px;
-  left: 6%;
-  color: #fff;
 }
 
-.p1 {
-  margin: 5% 0 0 0;
-  margin-left: 6%;
-  width: 80%;
-  font-size: 24px;
+#Curiosidade article p {
+  margin: 0 0 30px;
+  line-height: 30px;
+  font-size: 18px;
 }
 
-#Curiosidade div {
-  position: relative;
-  display: inline-flex;
-  justify-content: space-around;
-  flex-direction: column;
-  height: 400px;
-  width: 25%;
-  left: 11%;
-  top: 100px;
-  box-sizing: border-box;
+#Curiosidade article div#grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  counter-reset: grid-counter;
 }
 
-#Curiosidade button {
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #ff5721;
-  width: 40%;
+#Curiosidade article div.card-do-grid {
+  display: block;
+}
+
+#Curiosidade article div.card-do-grid h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+}
+
+#Curiosidade article div.card-do-grid button {
+  display: block;
+  width: 150px;
   padding: 10px;
-  border: none;
-  border-radius: 10%;
-  margin: 20px 20px;
+  background-color: #ff5721;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: all 300ms ease-in-out;
+  border: 1px solid #ff5721;
+}
+
+#Curiosidade article div.card-do-grid button:hover {
+  background-color: #fff;
+  color: #ff5721;
+  border: 1px solid #ff5721;
 }
 
 /* ANIMAIS EM EXTINÇÃO */
@@ -388,7 +406,6 @@ label {
 section#contato article {
   max-width: 80%;
   margin: auto;
-  padding: 10rem var(3rem);
   padding: 50px;
 }
 
@@ -543,25 +560,10 @@ section#contato form button:hover {
     margin-top: 50px;
   }
 
-  #Curiosidade h1 {
-    top: 40px;
-    left: 18%;
-  }
-
   .p1 {
     margin: 10% 0 0 0;
     margin-left: 8%;
     text-align: center;
-  }
-
-  #Curiosidade div {
-    position: relative;
-    display: block;
-    height: 380px;
-    width: 70%;
-    left: 15%;
-    top: 25px;
-    box-sizing: border-box;
   }
 
   #extintos {
@@ -577,6 +579,20 @@ section#contato form button:hover {
     width: 80%;
     margin: auto;
     margin-top: 50px;
+  }
+
+  #Curiosidade article {
+    display: block;
+  }
+
+  #Curiosidade article div#grid {
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  #Curiosidade article div.card-do-grid {
+    width: 100%;
+    margin-bottom: 50px;
   }
 
   section#contato h2 {
